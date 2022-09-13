@@ -1,0 +1,65 @@
+.App {
+    text-align: center;
+    color: white;
+    background-color: #282c34;
+  }
+  
+.Portfolio {
+    color: white;
+    background-color: rgba(16, 106, 93, 0.986);
+    padding: 2%;
+  }
+  
+.Footer{
+    padding: 2%;
+  }
+  
+.Header{
+    padding: 1%;
+  }
+  
+.Skills{
+    padding: 2%;
+  }
+  
+  /* .footerInfo{
+    text-align: left;
+  } */
+  
+h1{
+    padding: 3%;
+    text-align: center;
+  }
+  
+  img{
+    border-radius: 50%;
+    max-height: 30%;
+    max-width: 30%;
+  }
+  
+  .profilepicture{
+    border-radius: 50%;
+    max-height: 15%;
+    max-width: 15%;
+  }
+  
+  .contentred{
+    color:red;
+  }
+  
+  /* .icon{
+    border-radius: 50%;
+    max-height: 30%;
+  } */
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  

@@ -1,36 +1,34 @@
-// const url = "https://mock-data-api.firebaseio.com/webb21/products.json"; //Vår API
 const url =
-  "https://public-api.wordpress.com/rest/v1.1/sites/webb21vahlen.wordpress.com/posts";
-const articleListElement = document.getElementById("articleList"); //Identifierar vår div i DOM:en som det ska appendas till
+  "https://public-api.wordpress.com/rest/v1.1/sites/webb21vahlen.wordpress.com/posts"; //Our API from wordpress.com where we update our Blog-posts
+const articleListElement = document.getElementById("articleList"); //Identify where our DIV where we will append to
 
 function renderArticleItem(articleItem, rating) {
   //renderar våra object
-  console.log(rating);
   const articleItemElement = document.createElement("div");
 
-  const titleElement = document.createElement("h3"); //Skapa en H2
-  titleElement.innerText = articleItem.title; //Hämtar name och sätter titel till vår H2
+  const titleElement = document.createElement("h3"); //Create a H3
+  titleElement.innerText = articleItem.title; //Get the title Blog-title from our JSON
 
-  const imageElement = document.createElement("img");
-  imageElement.src = articleItem.featured_image;
+  const imageElement = document.createElement("div"); //Create a div element
+  imageElement.innerHTML = articleItem.content; //Set the innerHTML from the BLOG-posts
+  console.log(articleItem.content);
 
-  articleItemElement.append(titleElement); //appendar titeln till vår div
-  articleItemElement.append(imageElement);
+  articleItemElement.append(titleElement); //Appends our title to the first DIV
+  articleItemElement.append(imageElement); //Appends our imageElemnt to our DIV
 
-  articleListElement.append(articleItemElement); //Appendar vår div till diven i DOM:en
+  articleListElement.append(articleItemElement); //Appends the whole DIV to our DOM
 }
 
 function renderArticleList(articleList) {
+  //Receives an array and sends each object in the array renderArticleItem where they will be rendered
   articleList.forEach((articleItem) => {
-    //tar emot array och skickar vardera object till ny funktion
     renderArticleItem(articleItem);
+    console.log(articleItem);
   });
 }
 
-fetch(url) //Hämta vårt API/URL
+fetch(url) //Fetches our API/URL
   .then((response) => response.json())
   .then((data) => {
-    renderArticleList(data.posts); //Skicka array med object
-    console.log("HÄR");
-    console.log(data);
+    renderArticleList(data.posts);
   });

@@ -1,4 +1,4 @@
-Project description:
+# Project description:
 
 
 This project is an example of using headless CMS on a static webpage. The headless CMS use is Wordpress.com and
@@ -12,7 +12,7 @@ The reason for using Vanilla Javascript to render the static webpage is due to m
 W3C markup validator which can be found at https://validator.w3.org/. 
 
 
-Backend:
+**Backend:**
 
 Wordpress.com is used as backend in this project where posts are created and which are then rendered in javascript on the static webpage https://cms-vanilla.vercel.app/. 
 
@@ -33,7 +33,7 @@ you will need to refresh the webpage so the new posts are rendered.
 If you want to use my wordpress.com than I will need to invite you to the project as an author and will require either your email or username in Vercel. You can contact me at: patrik.vahlen@gmail.com.  
 
 
-Frontend: 
+**Frontend:** 
 
 This project uses basic javascript rendering using HTML and CSS. The code in app.js is commented thoroughly if Javascript is new to you. 
 

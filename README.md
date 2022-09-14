@@ -30,6 +30,8 @@ https://public-api.wordpress.com/rest/v1.1/sites/"YOUR_WEBPAGE_NAME_HERE".wordpr
 Use your link and replace the URL in app.js at the very top to render your posts on the webpage. When creating new posts
 you will need to refresh the webpage so the new posts are rendered. 
 
+If you want to use my wordpress.com than I will need to invite you to the project as an author and will require either your email or username in Vercel. You can contact me at: patrik.vahlen@gmail.com.  
+
 
 Frontend: 
 

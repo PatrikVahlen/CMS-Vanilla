@@ -22,7 +22,7 @@ If you already have access to the site on my wordpress.com you can start posting
 
 If you're using Visual Studio Code on Windows type below in the terminal:
 
-> git clone https://github.com/PatrikVahlen/CMS-Vanilla.git
+```git clone https://github.com/PatrikVahlen/CMS-Vanilla.git```
 
 This should clone the repository so you have it locally, no need to install any dependencies at all.
 
@@ -40,7 +40,7 @@ After you've created a webpage in Wordpress.com, made the site public and create
 
 Replace **YOUR_WEBPAGE_NAME_HERE** with your published webpage-name below. 
 
-https://public-api.wordpress.com/rest/v1.1/sites/YOUR_WEBPAGE_NAME_HERE.wordpress.com/posts
+```https://public-api.wordpress.com/rest/v1.1/sites/YOUR_WEBPAGE_NAME_HERE.wordpress.com/posts```
 
 Replace the URL in app.js at the very top to render your posts on the webpage. When creating new posts you will need to refresh the webpage so the new posts are rendered.
 

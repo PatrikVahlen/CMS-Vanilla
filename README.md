@@ -16,9 +16,9 @@ The webpage can be found at: https://cms-vanilla.vercel.app/
 
 If you already have access to the site on my wordpress.com you can start posting and the webpage should dynamically update after a refresh of the page.
 
-### Install locally
+## Install locally
 
-#### 1. Clone the repository
+### 1. Clone the repository
 
 If you're using Visual Studio Code on Windows type below in the terminal:
 
@@ -26,11 +26,11 @@ If you're using Visual Studio Code on Windows type below in the terminal:
 
 This should clone the repository so you have it locally, no need to install any dependencies at all.
 
-#### 2. Run your project
+### 2. Run your project
 
-In Visual Studio Code right click the index.html file and choose "Open with Live Server" and it the webpage will run locally on your machine.
+In Visual Studio Code right click the **index.html** file and choose **"Open with Live Server"** and it the webpage will run locally on your machine.
 
-#### 3. Creating you own Wordpress.com
+### 3. Creating you own Wordpress.com
 
 If you are not familiar with Wordpress.com you can follow the link below, to create an account and get started with how to use wordpress.com
 
@@ -38,15 +38,15 @@ https://wordpress.com/support/create-a-blog/#:~:text=in%20your%20browser.-,Signi
 
 After you've created a webpage in Wordpress.com, made the site public and created a post you need to retrieve the API so that the frontend can render the posts.
 
-Replace YOUR_WEBPAGE_NAME_HERE with your published webpage-name below. 
+Replace **YOUR_WEBPAGE_NAME_HERE** with your published webpage-name below. 
 
 https://public-api.wordpress.com/rest/v1.1/sites/YOUR_WEBPAGE_NAME_HERE.wordpress.com/posts
 
 Replace the URL in app.js at the very top to render your posts on the webpage. When creating new posts you will need to refresh the webpage so the new posts are rendered.
 
-When creating your posts in Wordpress.com and you are including images, it's important to add an ALT-text to that picture, this is left to the publisher to make sure.
+When creating your posts in Wordpress.com and you are including images, it's important to add an **_ALT-text_** to that picture, this is left to the publisher to make sure.
 
-#### 4. Deploy
+### 4. Deploy
 
 We are using Vercel to host our static webpage. If you are new to Vercel (which I was to) it's quite simple, just follow the below link to create an account and Vercel.com will guide you through the process. 
 
@@ -56,7 +56,7 @@ You will also need a GITHUB repository to connect your created project to Vercel
 
 The webpage hosted by Vercel will be updated automatically after pushing new code to your GIT-repository as this is handled by GITHUB.
 
-##### Developers notes
+#### Developers notes
 
 The reason for using Vanilla Javascript to render the static webpage is due to me wanting to be able to use
 W3C markup validator which can be found at https://validator.w3.org/.

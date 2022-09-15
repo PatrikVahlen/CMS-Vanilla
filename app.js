@@ -14,9 +14,9 @@ function renderArticleItem(articleItem, rating) {
   console.log(articleItem.content);
 
   articleItemElement.append(titleElement); //Appends our title to the first DIV
-  articleItemElement.append(imageElement); //Appends our imageElemnt to our DIV
+  articleItemElement.append(imageElement); //Appends our imageElement to our DIV
 
-  articleListElement.append(articleItemElement); //Appends the whole DIV to our DOM!!!!
+  articleListElement.append(articleItemElement); //Appends the whole DIV to our DOM
 }
 
 function renderArticleList(articleList) {

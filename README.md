@@ -14,7 +14,7 @@ To use this project you need to be invited to my wordpress.com as an author by b
 
 The webpage can be found at: https://cms-vanilla.vercel.app/
 
-If you need access to my wordpress.com to make you can be invited by an admin by providing you email and you will be assigned approriate roll andcan start posting and the webpage should dynamically update after a refresh of the page.
+If you need access to my wordpress.com you can be invited by an admin by providing your email and you will be assigned an approriate roll and can start posting and the webpage which should dynamically update after a refresh of the page.
 
 ## Install locally
 
